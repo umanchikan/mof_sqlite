@@ -1,5 +1,7 @@
 class Property < ApplicationRecord
   has_many :near_stations, dependent: :destroy
+  validates :price, numericality: { only_integer: true }, allow_blank: true
+  validates :age, numericality: { only_integer: true }, allow_blank: true
   accepts_nested_attributes_for :near_stations, reject_if: :reject_posts, allow_destroy: true
 end
 
