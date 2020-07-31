@@ -19,7 +19,7 @@
   </div>
   <div class="field">
     <%= f.label :賃料 %>
-    <p><%= f.text_field :price %>円</p>
+    <p><%= f.number_field :price %>円</p>
   </div>
   <div class="field">
     <%= f.label :住所 %>
@@ -27,7 +27,7 @@
   </div>
   <div class="field">
     <%= f.label :築年数 %>
-    <p><%= f.text_field :age %>年</p>
+    <p><%= f.number_field :age %>年</p>
   </div>
   <div class="field">
     <p><%= f.label :備考 %></p>
@@ -50,7 +50,7 @@
       </div>
       <div class="field">
         <%= p.label :徒歩分数 %>
-        <p><%= p.text_field :minutes %>分</p>
+        <p><%= p.number_field :minutes %>分</p>
       </div>
       <% i += 1 %>
     <% end %>
